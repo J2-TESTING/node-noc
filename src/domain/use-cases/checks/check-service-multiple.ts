@@ -31,6 +31,7 @@ export class CheckServiceMultiple implements CheckServiceMultipleUseCase {
 
     try {
       const req = await fetch( url );
+      
       if ( !req.ok ) {
         throw new Error( `Error on check service ${ url }` );
       }

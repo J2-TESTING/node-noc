@@ -8,9 +8,13 @@ El objetivo es crear una serie de tareas usando Arquitectura Limpia con TypeScri
 3. Ejecutar el comando ```npm install```
 4. Levantar las bases de datos con el comando
    ```
-   docker compose up -d
+   docker compose up -d --remove-orphans
    ```
-5. Ejecutar ```npm run dev```
+5. Ejecutar
+   ```
+   npx prisma migrate dev
+   ```
+6. Ejecutar ```npm run dev```
 
 
 ## Obtener Gmail Key

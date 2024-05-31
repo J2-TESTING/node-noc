@@ -6,8 +6,8 @@ interface CheckServiceUseCase {
 }
 
 
-type SuccessCallback = (() => void) | undefined;
-type ErrorCallback = (( error: string ) => void) | undefined;
+type SuccessCallback = () => void | undefined;
+type ErrorCallback = ( error: string ) => void | undefined;
 
 
 
